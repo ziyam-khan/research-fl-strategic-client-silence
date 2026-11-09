@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them as below."
+title: "Absence Not at Random: A Pre-Registered Study of Strategic Client Silence in Federated Learning"
+type: software
+authors:
+  - family-names: Khan
+    given-names: Ziyam
+    affiliation: Parul University
+repository-code: "https://github.com/ziyam-khan/absence-not-at-random"
+license: MIT
+version: 1.0.0
+date-released: "2026-11-09"
+keywords:
+  - federated learning
+  - adversarial machine learning
+  - client unavailability
+  - missing data
+  - pre-registration

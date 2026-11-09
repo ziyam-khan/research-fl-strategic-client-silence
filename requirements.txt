@@ -1,0 +1,7 @@
+# Versions used for the v2 runs (Python 3.12.3, CUDA 12.8, NVIDIA RTX 3090).
+# The analysis scripts need only the Python standard library.
+torch==2.8.0
+torchvision==0.23.0
+numpy==2.1.2
+# Figures only
+matplotlib>=3.8

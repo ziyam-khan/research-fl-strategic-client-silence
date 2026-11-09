@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.release/
+*.tgz
+hpc-package/results/
+hpc-package/logs/
+hpc-package/logs-v2/
+hpc-package/data/

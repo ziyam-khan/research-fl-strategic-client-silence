@@ -1,0 +1,177 @@
+cells loaded: 650; diverged: 0
+
+1. Full gain matrix vs FedAvg (pp; 95% CI; * = survives Holm over all 100 tests)
+  EMNIST
+    Random       harm  +0.59 [ +0.41, +0.76] p=0.001
+                 AAWA v1  -0.17 [ -0.38, +0.05] p=0.102
+                 AAWA v2  +0.05 [ -0.04, +0.14] p=0.177
+                 MIFA     +0.54 [ +0.38, +0.70] p=0.001
+                 Mem-10   +0.54 [ +0.38, +0.70] p=0.001
+    Gradient     harm  +2.41 [ +1.47, +3.34] p=0.002
+                 AAWA v1  -0.06 [ -0.22, +0.11] p=0.386
+                 AAWA v2  +0.12 [ -0.13, +0.37] p=0.249
+                 MIFA     -1.62 [ -3.44, +0.20] p=0.069
+                 Mem-10   -0.27 [ -0.86, +0.32] p=0.268
+    Distribution harm  +1.52 [ +1.00, +2.05] p=0.001
+                 AAWA v1  +0.00 [ +0.00, +0.00] p=1.000
+                 AAWA v2  +0.08 [ -0.05, +0.22] p=0.149
+                 MIFA     -0.04 [ -0.12, +0.04] p=0.249
+                 Mem-10   -0.04 [ -0.12, +0.04] p=0.249
+    Combined     harm  +1.56 [ +1.30, +1.81] p=0.000 *
+                 AAWA v1  +0.25 [ -0.45, +0.96] p=0.377
+                 AAWA v2  +0.27 [ -0.33, +0.88] p=0.281
+                 MIFA     -1.08 [ -2.36, +0.20] p=0.079
+                 Mem-10   +0.08 [ -0.09, +0.26] p=0.245
+  CIFAR-100
+    Random       harm  +0.65 [ +0.25, +1.05] p=0.011
+                 AAWA v1  -0.12 [ -0.34, +0.11] p=0.220
+                 AAWA v2  -0.03 [ -0.22, +0.15] p=0.624
+                 MIFA     +0.23 [ -0.20, +0.67] p=0.209
+                 Mem-10   +0.23 [ -0.20, +0.67] p=0.209
+    Gradient     harm  +1.30 [ +0.29, +2.31] p=0.023
+                 AAWA v1  -0.20 [ -0.29, -0.11] p=0.004
+                 AAWA v2  -0.02 [ -0.45, +0.41] p=0.898
+                 MIFA     -2.20 [ -3.35, -1.06] p=0.006
+                 Mem-10   -0.38 [ -0.89, +0.12] p=0.102
+    Distribution harm  +0.94 [ +0.16, +1.72] p=0.029
+                 AAWA v1  +0.00 [ +0.00, +0.00] p=1.000
+                 AAWA v2  +0.03 [ -0.12, +0.17] p=0.635
+                 MIFA     +0.03 [ -0.02, +0.08] p=0.157
+                 Mem-10   +0.03 [ -0.02, +0.08] p=0.157
+    Combined     harm  +0.94 [ +0.12, +1.75] p=0.033
+                 AAWA v1  +0.16 [ -0.48, +0.79] p=0.527
+                 AAWA v2  +0.10 [ -0.43, +0.64] p=0.619
+                 MIFA     -1.86 [ -2.69, -1.03] p=0.003
+                 Mem-10   -0.19 [ -0.76, +0.38] p=0.403
+  CIFAR-10
+    Random       harm  +1.23 [ +0.70, +1.76] p=0.003
+                 AAWA v1  -0.49 [ -0.91, -0.06] p=0.034
+                 AAWA v2  +0.67 [ +0.32, +1.02] p=0.006
+                 MIFA     +1.07 [ +0.54, +1.60] p=0.005
+                 Mem-10   +1.07 [ +0.54, +1.60] p=0.005
+    Gradient     harm  +2.12 [ +0.14, +4.09] p=0.041
+                 AAWA v1  -0.15 [ -3.17, +2.86] p=0.894
+                 AAWA v2  +0.29 [ -1.46, +2.05] p=0.666
+                 MIFA     -0.95 [ -4.07, +2.18] p=0.447
+                 Mem-10   +0.01 [ -1.59, +1.61] p=0.989
+    Distribution harm  +0.27 [ -2.81, +3.34] p=0.822
+                 AAWA v1  +0.00 [ +0.00, +0.00] p=1.000
+                 AAWA v2  +0.38 [ -0.12, +0.88] p=0.103
+                 MIFA     -0.02 [ -0.07, +0.02] p=0.175
+                 Mem-10   -0.02 [ -0.07, +0.02] p=0.175
+    Combined     harm  +0.94 [ -2.74, +4.63] p=0.516
+                 AAWA v1  -0.24 [ -3.08, +2.61] p=0.829
+                 AAWA v2  +1.45 [ -1.03, +3.92] p=0.180
+                 MIFA     -1.60 [ -4.52, +1.32] p=0.202
+                 Mem-10   -1.01 [ -1.61, -0.41] p=0.009
+  HAR (Dirichlet)
+    Random       harm  +4.34 [ -0.07, +8.75] p=0.052
+                 AAWA v1  -0.65 [ -1.88, +0.58] p=0.214
+                 AAWA v2  +2.01 [ +0.60, +3.42] p=0.017
+                 MIFA     +4.35 [ +0.00, +8.69] p=0.050
+                 Mem-10   +4.35 [ +0.00, +8.69] p=0.050
+    Gradient     harm  +9.64 [ +1.62,+17.67] p=0.029
+                 AAWA v1  -0.05 [ -0.91, +0.82] p=0.881
+                 AAWA v2  +3.88 [ -0.92, +8.68] p=0.088
+                 MIFA     +6.04 [ +0.31,+11.77] p=0.043
+                 Mem-10   +1.24 [ -0.41, +2.88] p=0.105
+    Distribution harm  +3.03 [ -2.51, +8.57] p=0.204
+                 AAWA v1  +0.00 [ +0.00, +0.00] p=1.000
+                 AAWA v2  +2.23 [ -2.43, +6.89] p=0.255
+                 MIFA     -0.00 [ -0.01, +0.00] p=0.109
+                 Mem-10   -0.00 [ -0.01, +0.00] p=0.109
+    Combined     harm  +2.08 [ -2.55, +6.71] p=0.280
+                 AAWA v1  -0.02 [ -0.79, +0.76] p=0.958
+                 AAWA v2  +1.02 [ -2.64, +4.69] p=0.482
+                 MIFA     -1.38 [ -8.38, +5.61] p=0.612
+                 Mem-10   -1.21 [ -5.65, +3.23] p=0.491
+  HAR (subjects)
+    Random       harm  +0.07 [ -0.43, +0.56] p=0.717
+                 AAWA v1  +0.02 [ -0.10, +0.15] p=0.675
+                 AAWA v2  +0.00 [ -0.00, +0.01] p=0.135
+                 MIFA     +0.06 [ -0.13, +0.24] p=0.434
+                 Mem-10   +0.06 [ -0.13, +0.24] p=0.434
+    Gradient     harm  +0.16 [ -0.36, +0.67] p=0.443
+                 AAWA v1  -0.02 [ -0.14, +0.10] p=0.638
+                 AAWA v2  +0.02 [ -0.03, +0.07] p=0.263
+                 MIFA     -1.60 [ -3.95, +0.75] p=0.132
+                 Mem-10   -0.21 [ -0.77, +0.35] p=0.355
+    Distribution harm  +0.06 [ -0.57, +0.69] p=0.807
+                 AAWA v1  +0.00 [ +0.00, +0.00] p=1.000
+                 AAWA v2  -0.00 [ -0.02, +0.01] p=0.596
+                 MIFA     -0.01 [ -0.02, +0.00] p=0.154
+                 Mem-10   -0.01 [ -0.02, +0.00] p=0.154
+    Combined     harm  +0.18 [ -0.40, +0.77] p=0.427
+                 AAWA v1  +0.09 [ -0.14, +0.32] p=0.348
+                 AAWA v2  -0.01 [ -0.02, +0.01] p=0.390
+                 MIFA     -1.02 [ -1.95, -0.09] p=0.038
+                 Mem-10   -0.29 [ -0.97, +0.38] p=0.297
+  Holm survivors: 1 of 100
+
+2. Convergence: FedAvg, no attack, mean accuracy at rounds 80 / 90 / 100 (5 seeds)
+  EMNIST           84.01 / 84.02 / 84.15
+  CIFAR-100        23.49 / 25.16 / 26.73
+  CIFAR-10         55.17 / 56.22 / 58.28
+  HAR (Dirichlet)  85.43 / 87.08 / 87.38
+  HAR (subjects)   87.76 / 88.90 / 89.18
+
+3. Memory mechanism: staleness of reused updates (MIFA / Mem-10), pooled over seeds
+  MIFA   EMNIST           Random       median age   1.0  p90    2  stale weight share  29.6%
+  MIFA   EMNIST           Gradient     median age  25.0  p90   70  stale weight share  30.9%
+  MIFA   EMNIST           Combined     median age  33.0  p90   78  stale weight share  28.5%
+  MIFA   CIFAR-100        Random       median age   1.0  p90    2  stale weight share  29.6%
+  MIFA   CIFAR-100        Gradient     median age  18.0  p90   58  stale weight share  30.3%
+  MIFA   CIFAR-100        Combined     median age  16.0  p90   62  stale weight share  26.9%
+  MIFA   CIFAR-10         Random       median age   1.0  p90    2  stale weight share  29.3%
+  MIFA   CIFAR-10         Gradient     median age  21.0  p90   67  stale weight share  29.2%
+  MIFA   CIFAR-10         Combined     median age  22.0  p90   71  stale weight share  31.3%
+  MIFA   HAR (Dirichlet)  Random       median age   1.0  p90    2  stale weight share  30.0%
+  MIFA   HAR (Dirichlet)  Gradient     median age  27.0  p90   72  stale weight share  28.0%
+  MIFA   HAR (Dirichlet)  Combined     median age  33.0  p90   80  stale weight share  25.3%
+  MIFA   HAR (subjects)   Random       median age   1.0  p90    2  stale weight share  28.1%
+  MIFA   HAR (subjects)   Gradient     median age   9.5  p90   35  stale weight share  28.1%
+  MIFA   HAR (subjects)   Combined     median age   9.0  p90   37  stale weight share  28.0%
+  Mem-10 EMNIST           Random       median age   1.0  p90    2  stale weight share  29.6%
+  Mem-10 EMNIST           Gradient     median age   4.0  p90    8  stale weight share   6.1%
+  Mem-10 EMNIST           Combined     median age   4.0  p90    8  stale weight share   6.9%
+  Mem-10 CIFAR-100        Random       median age   1.0  p90    2  stale weight share  29.6%
+  Mem-10 CIFAR-100        Gradient     median age   4.0  p90    8  stale weight share  10.6%
+  Mem-10 CIFAR-100        Combined     median age   3.0  p90    8  stale weight share  10.6%
+  Mem-10 CIFAR-10         Random       median age   1.0  p90    2  stale weight share  29.3%
+  Mem-10 CIFAR-10         Gradient     median age   4.0  p90    8  stale weight share  10.7%
+  Mem-10 CIFAR-10         Combined     median age   4.0  p90    8  stale weight share  10.0%
+  Mem-10 HAR (Dirichlet)  Random       median age   1.0  p90    2  stale weight share  30.0%
+  Mem-10 HAR (Dirichlet)  Gradient     median age   4.0  p90    8  stale weight share   5.2%
+  Mem-10 HAR (Dirichlet)  Combined     median age   4.0  p90    8  stale weight share   4.5%
+  Mem-10 HAR (subjects)   Random       median age   1.0  p90    2  stale weight share  28.1%
+  Mem-10 HAR (subjects)   Gradient     median age   4.0  p90    8  stale weight share  15.4%
+  Mem-10 HAR (subjects)   Combined     median age   4.0  p90    8  stale weight share  15.7%
+
+4. Absence runs (FedAvg cells): median / mean consecutive rounds absent
+  EMNIST    Random         1.0 /   1.4  (n=2091)
+  EMNIST    Gradient       3.0 /  26.1  (n=115)
+  EMNIST    Distribution 100.0 / 100.0  (n=30)
+  EMNIST    Combined       2.0 /  23.3  (n=129)
+  CIFAR-10  Random         1.0 /   1.4  (n=2091)
+  CIFAR-10  Gradient       3.5 /  14.4  (n=208)
+  CIFAR-10  Distribution 100.0 / 100.0  (n=30)
+  CIFAR-10  Combined       2.0 /  13.7  (n=219)
+
+5. Worst-class harm, FedAvg (largest per-class drop vs no attack; mean ± sd over seeds)
+  EMNIST           Random  11.6± 0.9  Gradient  35.3±13.5  Distribution  25.9± 6.5  Combined  28.6±11.0
+  CIFAR-100        Random  10.0± 2.9  Gradient  27.1± 6.4  Distribution  26.7± 6.8  Combined  23.8± 7.4
+  CIFAR-10         Random   9.1± 4.1  Gradient  20.7± 7.7  Distribution  23.4±15.2  Combined  22.6±16.1
+  HAR (Dirichlet)  Random  22.2±18.0  Gradient  50.9±29.2  Distribution  29.5±36.7  Combined  18.3±13.4
+  HAR (subjects)   Random   1.8± 1.3  Gradient   5.2± 2.9  Distribution   5.0± 0.4  Combined   4.0± 1.7
+
+6. Power: minimum detectable effect (paired, 5 seeds, ~80% power ≈ (2.776+0.941)·sd/√5)
+  G(v2) EMNIST Combined: sd of paired diff 0.49 -> MDE ≈ 0.81 pp
+  G(v2) EMNIST Distribution: sd of paired diff 0.11 -> MDE ≈ 0.18 pp
+  G(v2) CIFAR-10 Combined: sd of paired diff 1.99 -> MDE ≈ 3.31 pp
+
+7. Seed spread of FedAvg under each attack (sd of last-10 accuracy across seeds)
+  EMNIST           No attack 0.44  Random 0.57  Gradient 1.09  Distribution 0.62  Combined 0.42
+  CIFAR-100        No attack 0.90  Random 1.00  Gradient 1.00  Distribution 1.26  Combined 0.97
+  CIFAR-10         No attack 1.87  Random 1.75  Gradient 0.85  Distribution 4.09  Combined 3.67
+  HAR (Dirichlet)  No attack 3.12  Random 3.87  Gradient 5.59  Distribution 4.95  Combined 2.35
+  HAR (subjects)   No attack 0.60  Random 0.30  Gradient 0.50  Distribution 0.47  Combined 0.49
