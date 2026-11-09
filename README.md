@@ -93,6 +93,26 @@ The runner refuses to start if `PREREG-v2.md` or any frozen file differs from it
 
 Every run used 20 clients and a fixed budget of 100 rounds; CIFAR models are still improving at that point, so CIFAR effects are effects at that budget.
 
+## Compute
+
+All training ran on rented cloud GPUs from [RunPod](https://runpod.io?ref=ckgcw0be).
+
+| | First pre-registration (v1) | Second pre-registration (v2, 650 runs) |
+|---|---|---|
+| GPU | NVIDIA RTX 3090, 24 GB (Secure Cloud) | NVIDIA RTX 3090, 24 GB |
+| Host | 32 vCPU | AMD EPYC 7763, 116 GiB RAM, 20 GB container disk |
+| Software | | Python 3.12.3, PyTorch 2.8.0 (CUDA 12.8), torchvision 0.23.0, NumPy 2.1.2, NVIDIA driver 595.91.07 |
+| Price | $0.50 per hour | |
+
+The models are small, so training is CPU-bound: up to 29 worker processes shared the one GPU, each claiming cells from a work queue ([`launcher_v2.sh`](hpc-package/launcher_v2.sh)). Every v2 cell ran with deterministic kernels.
+
+<p align="center">
+  <img src="figures/compute/runpod-telemetry-v2.png" width="45%" alt="RunPod telemetry of the v2 pod during the run: RTX 3090 at 100% utilisation, 14 of 24 GiB VRAM, AMD EPYC 7763 host">
+  <br><sub>The v2 pod during the run: RTX 3090 at 100% utilisation with 14 of 24 GiB VRAM in use.</sub>
+</p>
+
+If you want to run similar experiments on RunPod, you can sign up through my referral link: <https://runpod.io?ref=ckgcw0be>.
+
 ## Citation
 
 The paper is in preparation. Until it is published, please cite the repository:
