@@ -48,7 +48,7 @@ def save(fig, name):
 
 def fig01_lineage():
     """Flow diagram: how the study got here (conference claim -> failed pre-registration -> v2)."""
-    steps = [("IC3AI 2026", "conference paper\nAAWA +2.82 pp\n1 seed, CIFAR-10"),
+    steps = [("IC3AI study", "1 seed, CIFAR-10\n+7.15 pp (paper)\n+2.82 pp (run 4)"),
              ("v1 prereg.", "3 seeds\n10 of 14 claims fail\nAAWA gain: none"),
              ("Diagnosis", "reweighting cannot\nrestore unsent classes\n+ GPU noise 2.2 pp"),
              ("v2 prereg.", "650 cells, 5 seeds\ndeterministic GPU\n+MIFA, Mem-10, HAR"),
@@ -289,7 +289,7 @@ def fig10_class_box():
 
 def fig11_replication():
     """Replication funnel: the conference effect of AAWA shrinks to zero as rigour increases."""
-    rows = [("CIFAR-10", "IC3AI, 1 seed", 2.82, None, None),
+    rows = [("CIFAR-10", "IC3AI run 4, 1 seed", 2.82, None, None),
             ("CIFAR-10", "v1, 3 seeds", -0.56, -2.92, 1.80),
             ("CIFAR-10", "v2, 5 seeds", None, None, None),
             ("EMNIST", "v1, 3 seeds", -0.17, -1.01, 0.67),

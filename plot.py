@@ -89,7 +89,7 @@ def seed_panel(a, xs, vals, labels, color, title, ylabel, refs=None, band=None):
     if refs:
         rx = [x for x, k in zip(xs, labels) if k in refs]
         a.scatter([x + 0.3 for x in rx], [refs[k] for k in labels if k in refs], marker="D", s=22,
-                  facecolor="white", edgecolor=INK, lw=1, zorder=5, label="IC3AI (1 run)")
+                  facecolor="white", edgecolor=INK, lw=1, zorder=5, label="IC3AI run 4 (1 seed)")
     a.set_xticks(xs, [ATK_LABEL[k] for k in labels])
     a.set_title(title, color=INK)
     a.set_ylabel(ylabel)

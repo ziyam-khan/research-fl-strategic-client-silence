@@ -23,7 +23,7 @@ Federated learning treats a client that fails to report as noise. An adversary c
 - **Reweighting the clients who remain is close to inert,** as predicted before the run.
 - **Server memory turns against the server.** Reusing absent clients' last updates (MIFA) helps under random silence on all five datasets, but under strategic silence its gain is negative in 9 of 10 settings. The reused updates are 16 to 33 rounds old instead of 1, because the adversary decides how long each client stays away.
 - **A short memory horizon keeps the benefit.** Capping memory at 10 rounds costs nothing under random silence and removes most of the loss under strategic silence. A small formal model of memory horizon against staleness explains when.
-- **An earlier result did not replicate.** The first pre-registration failed 10 of its 14 claims, including the single-seed gain reported for the AAWA aggregator. Both phases are reported in full.
+- **An earlier result did not replicate.** The first pre-registration failed 10 of its 14 claims, including the single-seed gains behind the AAWA aggregator's conference paper (7.15 points under random dropout at 30 rounds in the paper, 2.82 under the combined schedule in a 100-round run). Both phases are reported in full.
 
 <p align="center">
   <img src="figures/v2/fig06_gain_heatmap.png" width="88%" alt="Gain of each defence over FedAvg for every dataset and silence schedule">
