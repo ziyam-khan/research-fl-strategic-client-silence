@@ -1,15 +1,16 @@
 <div align="center">
 
-# Absence Not at Random
+# Strategic Client Silence in Federated Learning
 
-**A pre-registered study of strategic client silence in federated learning**
+**Absence Not at Random: a pre-registered study of what happens when an adversary chooses which clients go quiet**
 
-[![Pre-registered](https://img.shields.io/badge/study-pre--registered-2a78d6)](PREREG-v2.md)
-[![Runs](https://img.shields.io/badge/runs-650-1baf7a)](#results-and-reproduction)
-[![Deterministic](https://img.shields.io/badge/GPU-deterministic-6250d6)](#how-the-study-was-run)
-[![Python](https://img.shields.io/badge/python-3.12-eda100)](requirements.txt)
+[![Kind](https://img.shields.io/badge/kind-research-2a78d6)](#key-findings)
+[![Status](https://img.shields.io/badge/paper-in%20preparation-808080)](#citation)
 [![License: MIT](https://img.shields.io/badge/code-MIT-e34948)](LICENSE)
-[![Paper](https://img.shields.io/badge/paper-forthcoming-808080)](#citation)
+[![Python](https://img.shields.io/badge/python-3.12-eda100)](requirements.txt)
+[![Pre-registered](https://img.shields.io/badge/study-pre--registered-1baf7a)](PREREG-v2.md)
+[![Runs](https://img.shields.io/badge/runs-650-6250d6)](#results-and-reproduction)
+[![Deterministic](https://img.shields.io/badge/GPU-deterministic-e87ba4)](#how-the-study-was-run)
 
 </div>
 
@@ -51,10 +52,10 @@ The layout mirrors the paths in the pre-registration's hash tables, so the froze
 
 ## Results and reproduction
 
-Raw results (650 JSON files with per-round, per-class accuracy, aggregation weights, participants and silenced clients, plus logs) are attached to the [v1.0.0 release](https://github.com/ziyam-khan/absence-not-at-random/releases/tag/v1.0.0).
+Raw results (650 JSON files with per-round, per-class accuracy, aggregation weights, participants and silenced clients, plus logs) are attached to the [v1.0.0 release](https://github.com/ziyam-khan/research-fl-strategic-client-silence/releases/tag/v1.0.0).
 
 ```bash
-git clone https://github.com/ziyam-khan/absence-not-at-random && cd absence-not-at-random
+git clone https://github.com/ziyam-khan/research-fl-strategic-client-silence && cd research-fl-strategic-client-silence
 
 # 1. Check that the code matches what was pre-registered
 python3 verify_frozen.py
@@ -94,14 +95,14 @@ Every run used 20 clients and a fixed budget of 100 rounds; CIFAR models are sti
 
 ## Citation
 
-The paper is forthcoming. Until then, please cite the repository:
+The paper is in preparation. Until it is published, please cite the repository:
 
 ```bibtex
 @misc{khan2026absence,
   author       = {Khan, Ziyam},
   title        = {Absence Not at Random: A Pre-Registered Study of Strategic Client Silence in Federated Learning},
   year         = {2026},
-  howpublished = {\url{https://github.com/ziyam-khan/absence-not-at-random}},
+  howpublished = {\url{https://github.com/ziyam-khan/research-fl-strategic-client-silence}},
   note         = {Code, pre-registrations and results}
 }
 ```
