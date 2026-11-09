@@ -10,7 +10,7 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 P = os.path.join(HERE, "hpc-package")
 J = os.path.join(P, "results", "journal")
-IC3AI_RUN4 = os.path.join(HERE, "..", "ic3ai-2026", "results", "run4-cifar10-100rounds", "results.json")
+IC3AI_RUN4 = os.path.join(HERE, "..", "research-fl-adversary-aware-aggregation", "results", "run4-cifar10-100rounds", "results.json")
 SEEDS = (42, 123, 7)
 L = lambda k: json.load(open(os.path.join(J, k + ".json")))
 pp = lambda x: round(float(x) * 100, 2)

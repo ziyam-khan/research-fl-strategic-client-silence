@@ -2,7 +2,7 @@
 """Figures for the v2 pre-registered grid (650 cells). Reads the read-only results via explore_v2;
 writes figures/v2/*.pdf (paper, vector) and *.png (preview). v1 figures stay in figures/v1 (plot.py).
 
-Usage: ../ic3ai-2026/.venv/bin/python plot_v2.py      (matplotlib + numpy)
+Usage: python3 plot_v2.py      (matplotlib + numpy)
 
 Encoding rules (dataviz skill): colour follows the entity in every figure; every series also has a
 marker or line style and a direct label, so nothing is colour-only and the figures survive grayscale.

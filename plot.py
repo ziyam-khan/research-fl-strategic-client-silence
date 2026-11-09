@@ -3,7 +3,7 @@
 paper as a reported result (director, 2026-11-06). Reads the read-only v1 results; writes
 figures/v1/*.pdf (paper) and *.png (preview).
 
-Usage: <venv>/bin/python plot.py   (needs matplotlib + numpy; the ic3ai-2026 .venv has both)
+Usage: <venv>/bin/python plot.py   (needs matplotlib + numpy)
 """
 import json, os, statistics as st
 from math import sqrt

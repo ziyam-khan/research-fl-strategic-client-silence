@@ -7,3 +7,11 @@ hpc-package/results/
 hpc-package/logs/
 hpc-package/logs-v2/
 hpc-package/data/
+# Keep personal documents out of the repository
+*.pdf
+*.doc
+*.docx
+*.jpg
+*.jpeg
+*.zip
+.env
