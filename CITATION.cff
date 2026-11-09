@@ -6,6 +6,7 @@ authors:
   - family-names: Khan
     given-names: Ziyam
     affiliation: Parul University
+    orcid: "https://orcid.org/0009-0000-1943-8481"
 repository-code: "https://github.com/ziyam-khan/absence-not-at-random"
 license: MIT
 version: 1.0.0
